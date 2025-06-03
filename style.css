@@ -74,7 +74,24 @@
 .app-picture{
     width: 50%;
     float: right;
+    animation: floatUpDown 3s ease-in-out infinite;
 }
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.image-animation {
+  
+}
+
 .app-picture img{
     width: 100%;
     margin-top: -20px;
